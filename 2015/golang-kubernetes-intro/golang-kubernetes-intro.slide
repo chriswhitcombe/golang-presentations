@@ -1,0 +1,134 @@
+An introduction to GoLang and Kubernetes
+GDG Cardiff
+3 Sep 2015
+Tags: Golang, Kubernetes
+
+Chris Whitcombe
+http://bite-code.com
+@chriswhitcombe
+
+* About me
+
+- Been coding since age 9
+- Code in a lot of langauges, mostly Java professionally
+- Using Go in anger past year
+- Lead a team designing/developing cloud banking software
+
+.image 0.png
+
+* An introduction to GoLang and Kubernetes
+
+* Topics
+
+- Intro to Go
+- Intro to kubernetes
+- Demo
+
+* Intro to Go
+
+- Simple
+- Statically typed
+- Opinionated
+- Natively concurrent
+- Fun
+
+* Simple
+
+.code reverse-proxy.go
+
+* Simple
+
+- For loops
+- No inheritance
+- No generics
+- No exceptions (ish)
+- Gofmt
+- No choice (this is a great thing!)
+
+* Statically typed
+
+.play types.go
+
+* Opinionated
+
+.play variables.go
+
+* Opinionated
+
+.play loop1.go
+
+* Opinionated
+
+.play loop2.go
+
+* Natively concurrent
+
+.play concurrency1.go
+
+* Natively concurrent
+
+.play concurrency2.go
+
+* Natively concurrent
+
+.play concurrency3.go
+
+* Natively concurrent
+
+- Channels
+- Mutexes
+- sync/atomic
+
+* Fun
+
+- Very fast builds
+- Builds now cross compile
+- Very fast cycle time
+- Very productive
+- Vibrant community
+- 'Women who go'
+
+.image 18.png 591 679
+
+* Intro to Kubernetes
+
+- Add 'cluster' to your vocablary
+- Sheep not pets
+- Containers (docker)
+- Production ready
+
+* Cluster
+
+.image kubernetes-architecture.png 580 _
+
+* Cluster
+
+- Master - Rest api to control kubernetes
+- Nodes - Machines
+- Pods - Usually a single container (db, app server, cache)
+- Replication Controllers - Set target, leave alone
+- Service - Expose pods
+- Proxy - Deal with requests
+
+* Sheep not pets
+
+.image bolt-gun.jpg _ 800
+
+* Containers
+
+- Docker support
+- rkt in dev
+
+* Production ready
+
+- Google launch 2 billion containers per day
+- Written in go
+- Open source
+
+* Demo
+
+.image Demo.png _ 600
+
+* Bonus
+
+.iframe https://www.youtube.com/embed/5LEofr9KYBI 535 952
